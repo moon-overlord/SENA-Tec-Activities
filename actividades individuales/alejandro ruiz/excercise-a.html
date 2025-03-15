@@ -2,69 +2,134 @@
 <html lang="es">
 
 <head>
+    <!-- Metadatos básicos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <!-- Título de la página -->
+    <title>CatLand - El mundo de los gatos</title>
+    <!-- Descripción para SEO -->
+    <meta name="description" content="CatLand es tu sitio web para descubrir las mejores razas de gatos, imágenes y más.">
 </head>
 
 <body>
 
-    <!--Encabezado de la página-->
+    <!-- Encabezado de la página -->
     <header>
+        <div id="header-container">
+            <!-- Título principal -->
+            <h1>CatLand</h1>
 
-        <h1>CatLand</h1>
-
-        <div class="nav-bar">
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Gatos de la semana</a>
-                <a href="#">Contáctanos</a>
+            <!-- Barra de navegación -->
+            <nav class="nav-bar">
+                <a href="#header-container">Inicio |</a>
+                <a href="#cats-of-the-week"> Gatos de la semana |</a>
+                <a href="#contact-section"> Contáctanos</a>
             </nav>
+
+            <!-- Subtítulo y descripción -->
+            <h2>¡Bienvenido a CatLand!</h2>
+            <p>En CatLand encontrarás a todos tus gatos favoritos.</p>
+            <p>¿Interesado en los mejores gatos de la semana? <a href="#best-of-the-week">Conócelos aquí</a>.</p>
+
+            <!-- Imagen destacada -->
+            <img src="img/cat-1.jpg" alt="Gato siamés descansando en un sofá">
         </div>
-
-        <h2>¡Bienvenido a CatLand!</h2>
-
-        <p>
-            En CatLand encontrarás a todos tus gatos favoritos.
-        </p>
-
-        <p>
-            ¿Interesado en los mejores gatos de la semana? <a href="#">conócelos aquí</a>
-        </p>
-
-        <img src="img/cat-1.jpg" alt="imágen de gato">
-
     </header>
 
+    <!-- Contenido principal -->
     <main>
+        <!-- Sección: Mejores razas de la semana -->
+        <section id="best-of-the-week">
+            <h2>Mejores razas de la semana</h2>
+            <ol>
+                <li>Siamés</li>
+                <li>Persa puro</li>
+                <li>Angora</li>
+            </ol>
+        </section>
 
-        <h2>Mejores razas de la semana</h2>
+        <!-- Sección: Categorías más populares -->
+        <section>
+            <h2>Categorías más populares</h2>
+            <ul>
+                <li>Patas cortas</li>
+                <li>Pelo esponjoso</li>
+                <li>Heterocromía</li>
+            </ul>
+        </section>
 
-        <ol>
-            <li>Siamés</li>
-            <li>Persa puro</li>
-            <li>Angora</li>
-        </ol>
+        <!-- Sección: Gatos de la semana -->
+        <section id="cats-of-the-week">
+            <h2>Gatos de la semana</h2>
+            <table border="1px">
+                <thead>
+                    <tr>
+                        <th>Razas</th>
+                        <th>Tamaño</th>
+                        <th>Imágenes disponibles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Siamés</td>
+                        <td>Mediano</td>
+                        <td>5280</td>
+                    </tr>
+                    <tr>
+                        <td>Persa puro</td>
+                        <td>Mediano - Grande</td>
+                        <td>3200</td>
+                    </tr>
+                    <tr>
+                        <td>Angora</td>
+                        <td>Mediano</td>
+                        <td>8251</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-        <h2>Categorías más populares</h2>
+        <!-- Sección: Formulario de contacto -->
+        <section id="contact-section">
+            <h2>Contáctanos</h2>
+            <p>¿Tienes problemas con el sitio?</p>
+            <form action="procesar-formulario.php" method="post">
+                <!-- Campo: Nombre -->
+                <label for="nombre">Nombre:</label>
+                <br>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                <br><br>
 
-        <ul>
-            <li>Patas cortas</li>
-            <li>Pelo esponjoso</li>
-            <li>Heterocromía</li>
-        </ul>
+                <!-- Campo: Correo electrónico -->
+                <label for="email">Correo electrónico:</label>
+                <br>
+                <input type="email" id="email" name="email" placeholder="Introduce tu correo electrónico de contacto" required>
+                <br><br>
 
-        <table>
-            <tr>
-                <th>Razas</th>
-                <th></th>
-            </tr>
-        </table>
+                <!-- Campo: Mensaje -->
+                <label for="mensaje">Descríbenos tu problema:</label>
+                <br>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe los detalles de tu problema aquí." required></textarea>
+                <br><br>
+
+                <!-- Campo: Categoría -->
+                <label for="categoria">Categoría:</label>
+                <br>
+                <select id="categoria" name="categoria">
+                    <option value="general">General</option>
+                    <option value="soporte-tecnico">Soporte técnico</option>
+                </select>
+                <br><br>
+
+                <!-- Botón de envío -->
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
 
+    <!-- Pie de página -->
     <footer>
-
+        <p>&copy; 2025 CatLand. Todos los derechos reservados.</p>
     </footer>
 
 </body>
