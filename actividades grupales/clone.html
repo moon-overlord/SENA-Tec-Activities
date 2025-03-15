@@ -10,60 +10,81 @@
 <body>
     <header>
 
+        <h1>SuperStore</h1>
+
+        <nav>
+            <a href="">Productos | </a>
+            <a href="">Ofertas| </a>
+            <a href="">Contacto</a>
+        </nav>
+
+        <h2>Bienvenidos a SuperStore</h2>
+
+        <p>En <b>SuperStore</b> encontrarás todo lo que necesitas para tu hogar, desde <i>electrodomésticos</i> hasta
+            artículos de oficina. Tenemos un amplio catálogo de productos para todos los gustos.</p>
+
+        <p>
+            ¿Quieres conocer nuestras últimas promociones? Visita nuestro <a href="https://www.blogspot.com">blog
+                oficial</a> para más información sobre descuentos y novedades.
+        </p>
+
+        <img src="img/sena.avif" alt="imagen del SENA" width="300px">
+
     </header>
-    
+
     <main>
-    
-            <h1>Ofertas Destacadas</h1>
-    
-            <ol>
-                <li>Descuento en línea blanca</li>
-                <li>Promoción en computadoras portátiles</li>
-                <li>2x1 en accesorios de oficina</li>        
-            </ol>
-            
-            <h1>Categorías Populares</h1>
-    
-            <ul>
-                <li>Electrónica</li>
-                <li>Hogar y Cocina</li>
-                <li>Oficina y Papelería</li>
-                <li>Jardín y Exteriores</li>
-            </ul>
-    
-        </body>
-        
-    
-        <form action="/SENA/datos_usuario" method="post">
-            <p><tt>¿TIENES DUDAS, COMENTARIOS O DESEAS INFORMACIÓN? CONTÁCTANOS AQUÍ</tt></p>
-            <label for="nombre">Nombre:</label>
-            <br>
-            <input type="text" id="nombre" name="nombre" required>
-            <br>
-            <label for="correo">Correo:</label>
-            <br>
-            <input type="email" id="correo" name="correo" required>
-            <br>
-            <label for="mensaje">Mensaje:</label>
-            <br>
-            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
-            <br><br>
-            <label for="categoria">Categorias:</label>
-            <br>
-            <select name="categoria" id="categoria">
-                <option value="general">General</option>
-                <option value="Soporte">Soporte Tecnico</option>
-                <option value="Ventas">Ventas</option>
-                <option value="Reclamos">Reclamos</option>
-                <option value="otros">Otros</option>
-            </select>
-            <br><br><br>
-            <button type="submit">Enviar</button>
-        </form>
-    </main>
-    
-    <footer>
-        <p>&copy; 2025. Todos los derechos reservados. Esta pagina fue creada para recrear un trabajo en clase.</p>
-    </footer>
+
+        <h2>Ofertas Destacadas</h2>
+
+        <ol>
+            <li>Descuento en línea blanca</li>
+            <li>Promoción en computadoras portátiles</li>
+            <li>2x1 en accesorios de oficina</li>
+        </ol>
+
+        <h2>Categorías Populares</h2>
+
+        <ul>
+            <li>Electrónica</li>
+            <li>Hogar y Cocina</li>
+            <li>Oficina y Papelería</li>
+            <li>Jardín y Exteriores</li>
+        </ul>
+
 </body>
+
+
+<form action="/SENA/datos_usuario" method="post">
+    <p><tt>¿TIENES DUDAS, COMENTARIOS O DESEAS INFORMACIÓN? CONTÁCTANOS AQUÍ</tt></p>
+    <label for="nombre">Nombre:</label>
+    <br>
+    <input type="text" id="nombre" name="nombre" required>
+    <br>
+    <label for="correo">Correo:</label>
+    <br>
+    <input type="email" id="correo" name="correo" required>
+    <br>
+    <label for="mensaje">Mensaje:</label>
+    <br>
+    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
+    <br><br>
+    <label for="categoria">Categorias:</label>
+    <br>
+    <select name="categoria" id="categoria">
+        <option value="general">General</option>
+        <option value="Soporte">Soporte Tecnico</option>
+        <option value="Ventas">Ventas</option>
+        <option value="Reclamos">Reclamos</option>
+        <option value="otros">Otros</option>
+    </select>
+    <br><br><br>
+    <button type="submit">Enviar</button>
+</form>
+</main>
+
+<footer>
+    <p>&copy; 2025. Todos los derechos reservados.</p>
+</footer>
+</body>
+
 </html>
