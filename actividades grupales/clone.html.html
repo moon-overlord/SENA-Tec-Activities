@@ -11,82 +11,95 @@
     <header>
         <h1>SuperStore</h1>
         <nav>
-            <a href="#">Productos</a> | 
-            <a href="#">Ofertas</a> | 
-            <a href="#">Contacto</a>
+            <a href="#productos">Productos</a> | 
+            <a href="#ofertas">Ofertas</a> | 
+            <a href="#contacto">Contacto</a>
         </nav>
-
-        <h2>Bienvenidos a SuperStore</h2>
-        <p>En <strong>SuperStore</strong> encontrarás todo lo que necesitas para tu hogar, desde <em>electrodomésticos</em> hasta artículos de oficina. Tenemos un amplio catálogo de productos para todos los gustos.</p>
-        <p>¿Quieres conocer nuestras últimas promociones? Visita nuestro <a href="https://www.blogspot.com" target="_blank">blog oficial</a> para más información sobre descuentos y novedades.</p>
-        <img src="img/sena.avif" alt="Imagen del SENA" width="300">
     </header>
 
     <main>
-        <h2>Ofertas Destacadas</h2>
-        <ol>
-            <li>Descuento en línea blanca</li>
-            <li>Promoción en computadoras portátiles</li>
-            <li>2x1 en accesorios de oficina</li>
-        </ol>
+        <!-- Sección de Bienvenida -->
+        <div id="bienvenida">
+            <h2>Bienvenidos a SuperStore</h2>
+            <p>En <strong>SuperStore</strong> encontrarás todo lo que necesitas para tu hogar, desde <em>electrodomésticos</em> hasta artículos de oficina. Tenemos un amplio catálogo de productos para todos los gustos.</p>
+            <p>¿Quieres conocer nuestras últimas promociones? Visita nuestro <a href="https://www.blogspot.com" target="_blank">blog oficial</a> para más información sobre descuentos y novedades.</p>
+            <img src="img/sena.avif" alt="Imagen del SENA" width="300">
+        </div>
 
-        <h2>Categorías Populares</h2>
-        <ul>
-            <li>Electrónica</li>
-            <li>Hogar y Cocina</li>
-            <li>Oficina y Papelería</li>
-            <li>Jardín y Exteriores</li>
-        </ul>
+        <!-- Sección de Ofertas -->
+        <div id="ofertas">
+            <h2>Ofertas Destacadas</h2>
+            <ol>
+                <li>Descuento en línea blanca</li>
+                <li>Promoción en computadoras portátiles</li>
+                <li>2x1 en accesorios de oficina</li>
+            </ol>
+        </div>
 
-        <h2>Productos Destacados</h2>
-        <table border="1" cellspacing="0">
-            <thead>
-                <tr>
-                    <th>Producto</th>
-                    <th>Descripción</th>
-                    <th>Precio</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Microondas MX-200</td>
-                    <td>Microondas de 20L con función grill.</td>
-                    <td>$99.99</td>
-                </tr>
-                <tr>
-                    <td>Laptop VisionX</td>
-                    <td>8GB RAM, 256GB SSD, Procesador Intel i5</td>
-                    <td>$499.99</td>
-                </tr>
-                <tr>
-                    <td>Silla Ergonómica</td>
-                    <td>Respaldo ajustable, soporte lumbar incluido</td>
-                    <td>$85.00</td>
-                </tr>
-            </tbody>
-        </table>
+        <!-- Sección de Categorías -->
+        <div id="productos">
+            <h2>Categorías Populares</h2>
+            <ul>
+                <li>Electrónica</li>
+                <li>Hogar y Cocina</li>
+                <li>Oficina y Papelería</li>
+                <li>Jardín y Exteriores</li>
+            </ul>
+        </div>
 
-        <h2>Formulario de Contacto</h2>
+        <!-- Sección de Productos Destacados -->
+        <div id="productos-destacados">
+            <h2>Productos Destacados</h2>
+            <table border="1" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Microondas MX-200</td>
+                        <td>Microondas de 20L con función grill.</td>
+                        <td>$99.99</td>
+                    </tr>
+                    <tr>
+                        <td>Laptop VisionX</td>
+                        <td>8GB RAM, 256GB SSD, Procesador Intel i5</td>
+                        <td>$499.99</td>
+                    </tr>
+                    <tr>
+                        <td>Silla Ergonómica</td>
+                        <td>Respaldo ajustable, soporte lumbar incluido</td>
+                        <td>$85.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-        <p>¿Tienes dudas, comentarios o deseas información? Envíanos un mensaje</p>
-
-        <form action="/SENA/datos_usuario" method="post">
-            <label for="nombre">Nombre:</label><br>
-            <input type="text" id="nombre" name="nombre" required><br><br>
-            <label for="correo">Correo:</label><br>
-            <input type="email" id="correo" name="correo" required><br><br>
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea><br><br>
-            <label for="categoria">Categorías:</label><br>
-            <select name="categoria" id="categoria">
-                <option value="general">General</option>
-                <option value="Soporte">Soporte Técnico</option>
-                <option value="Ventas">Ventas</option>
-                <option value="Reclamos">Reclamos</option>
-                <option value="otros">Otros</option>
-            </select><br><br>
-            <button type="submit">Enviar</button>
-        </form>
+        <!-- Sección de Contacto -->
+        <div id="contacto">
+            <h2>Formulario de Contacto</h2>
+            <p>¿Tienes dudas, comentarios o deseas información? Envíanos un mensaje</p>
+            <form action="/SENA/datos_usuario" method="post">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="correo">Correo:</label><br>
+                <input type="email" id="correo" name="correo" required><br><br>
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea><br><br>
+                <label for="categoria">Categorías:</label><br>
+                <select name="categoria" id="categoria">
+                    <option value="general">General</option>
+                    <option value="Soporte">Soporte Técnico</option>
+                    <option value="Ventas">Ventas</option>
+                    <option value="Reclamos">Reclamos</option>
+                    <option value="otros">Otros</option>
+                </select><br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </main>
 
     <footer>
