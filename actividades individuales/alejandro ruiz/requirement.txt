@@ -1,8 +1,12 @@
 **Requerimientos**
 
-1. Titulo .
-2. Nav.
-3. Descripción de la página.
-4. Imágen.
-Tablas de productos con descripción y precio.
-2. Sección de contáctanos con formularios de nombre, correo electrónico, selección de categoría y mensaje.
+1. Titulo de página web.
+2. Nav de contenido principal.
+3. Mnesaje de bienvenida.
+4. Párrafo descriptivo de la página.
+5. Imágen de contenido.
+6. Listado de ofertas. 
+7. Listado de categorías populares.
+8. Tablas de productos con descripción y precio.
+9. Sección de contáctanos con formularios de nombre, correo electrónico, selección de categoría y mensaje.
+10. Footer de la página.
