@@ -1,0 +1,4 @@
+**Requerimientos**
+
+1. Tablas de productos con descripción y precio.
+2. Sección de contáctanos con formularios de nombre, correo electrónico, selección de categoría y mensaje.
