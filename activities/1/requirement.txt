@@ -1,4 +1,8 @@
 **Requerimientos**
 
-1. Tablas de productos con descripción y precio.
+1. Titulo .
+2. Nav.
+3. Descripción de la página.
+4. Imágen.
+Tablas de productos con descripción y precio.
 2. Sección de contáctanos con formularios de nombre, correo electrónico, selección de categoría y mensaje.
