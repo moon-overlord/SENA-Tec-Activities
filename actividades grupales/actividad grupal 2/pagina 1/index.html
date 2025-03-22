@@ -1,12 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
-    
+
+  <header>
+
+    <!--Contenedor del header-->
+    <div class="contenedor-header">
+      <div class="title">
+        <h1>Programación en los 80s</h1>
+      </div>
+
+      <!-- Menú de navegación -->
+      <div class="menu-navegacion">
+        <nav>
+          <a href="#historia">Historia</a>
+          <a href="#clasificacion">Clasificación</a>
+          <a href="#tabla">Comparación</a>
+          <a href="#sugerencia">Sugerencias</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!--Historia de los lenguajes de programacion-->
+    <div class="box-historia">
+
+      <article id="historia">
+        <h2>Historia</h2>
+      </article>
+
+      <section>
+        <p>
+          Los primeros lenguajes de programación preceden a la computadora moderna. En un inicio los lenguajes eran
+          códigos.
+        </p>
+
+        <p>
+          La máquina del telar de Jacquard, creada en 1801, utilizaba los orificios en tarjetas perforadas para
+          representar los movimientos de un brazo de la máquina de tejer, con el objetivo de generar patrones
+          decorativos
+          automáticamente.
+        </p>
+
+        <p>
+          Durante un período de nueve meses entre 1842 y 1843, Ada Lovelace tradujo las memorias del matemático italiano
+          Luigi Menabrea acerca de la nueva máquina propuesta por Charles Babbage, la Máquina Analítica. Con estos
+          escritos, ella añadió unas notas en las cuales especificaba en detalle un método para calcular los números de
+          Bernoulli con esta máquina.
+        </p>
+
+        <p>
+          Herman Hollerith se percató de que podía codificar la información en tarjetas perforadas cuando observó a los
+          conductores de trenes que identificaban a los pasajeros según el orificio que hacían en su respectivo ticket.
+          En
+          1890, la máquina tabuladora de Herman Hollerith fue utilizada para procesar los datos del censo de Estados
+          Unidos utilizando tarjetas perforadas.
+        </p>
+
+        <p>
+          Los primeros códigos de computadora estaban especializados según sus aplicaciones. En las primeras décadas del
+          siglo XX, los cálculos numéricos estaban basados en los números decimales. Con el paso del tiempo, se dieron
+          cuenta de que la lógica podía ser representada con números, no sólo con palabras. Por ejemplo, Alonzo Church
+          fue
+          capaz de expresar el cálculo lambda a través de fórmulas. La máquina de Turing estableció las bases para
+          almacenar programas como datos en la arquitectura de von Neuman de una computadora. Sin embargo, a diferencia
+          del cálculo lambda, el código de Turing no serviría satisfactoriamente como base para lenguajes de más alto
+          nivel- su principal uso es en el análisis riguroso en la complejidad algorítmica.
+        </p>
+
+        <p>
+          Como muchos “primeros” en la historia, el primer lenguaje de programación moderno es difícil de identificar.
+          Desde un inicio, las restricciones de hardware definían el lenguaje. Las tarjetas perforadas permitían 80
+          columnas, pero algunas de estas serían utilizadas para una clasificación de cada tarjeta. FORTRAN incluía
+          algunas palabras reservadas provenientes del Inglés, como “IF”, “GOTO” (go to) y “CONTINUE”. El uso del tambor
+          magnético para la memoria implicaba que los programas informáticos tuvieran que estar intercalados con las
+          rotaciones del tambor. Por lo tanto los programas eran muy dependientes del hardware.
+        </p>
+
+        <p>
+          Para algunas personas, lo que sería el primer lenguaje de programación moderno depende de cuánto poder y
+          legibilidad humana se requería antes de que se concediera el estado de "lenguaje de programación". Tanto el
+          telar de Jacquard como la Máquina Diferencial de Babbage, tenían lenguajes muy simples y extremadamente
+          limitados para describir las acciones que estas máquinas realizaran. Se puede incluso considerar los agujeros
+          perforados en los rollos de pianola como un limitado lenguaje de dominio específico, a pesar de no estar
+          diseñado para el consumo humano.
+        </p>
+      </section>
+    </div>
+
+    <div class="box-listas">
+
+      <article>
+        <h2>Categorías</h2>
+      </article>
+
+      <section>
+
+        <!--Lista de lenguajes procedurales-->
+        <div class="lista-procedurales" id="clasificacion">
+
+          <article>
+            <h2>Procedurales</h2>
+          </article>
+
+          <section>
+            <ul>
+              <li>Ada</li>
+              <li>Perl</li>
+              <li>Tcl</li>
+            </ul>
+          </section>
+
+        </div>
+
+        <!--Lista de lenguajes de programación orientada a objetos-->
+        <div class="lista-p-o-o">
+
+          <article>
+            <h2>Orientados a objetos</h2>
+          </article>
+
+          <section>
+            <ul>
+              <li>C++</li>
+              <li>Eiffel</li>
+              <li>Objective-C</li>
+            </ul>
+          </section>
+
+        </div>
+
+        <!--Lista de lenguajes funcionales-->
+        <div class="lista-funcionales">
+
+          <article>
+            <h2>Funcionales</h2>
+          </article>
+
+          <section>
+            <ul>
+              <li>Common Lisp/li>
+              <li>Erlang</li>
+              <li>FL (Backus)</li>
+            </ul>
+          </section>
+
+        </div>
+
+        <!--Lista de lenguajes en otras categorías-->
+        <div class="lista-otros">
+
+          <article>
+            <h2>Otros</h2>
+          </article>
+
+          <section>
+            <ul>
+              <li>Matlab</li>
+              <li>Mathematica</li>
+            </ul>
+          </section>
+
+        </div>
+
+      </section>
+
+      <aside>
+        <img src="img/wallpaper.jpg" alt="Imágen de programación">
+      </aside>
+
+    </div>
+
+    <!--Tabla comparativa de lenguajes-->
+    <div id="tabla">
+
+      <table>
+
+        <tr>
+          <th>Lenguaje</th>
+          <th>Categoría</th>
+          <th>Beneficios</th>
+          <th>Año</th>
+          <th>Popularidad actual</th>
+          <th>Área de uso</th>
+        </tr>
+
+        <tr>
+          <td>C++</td>
+          <td>Orientado a objetos</td>
+          <td>Alto rendimiento, flexibilidad, control de hardware</td>
+          <td>1980</td>
+          <td>Alta (sistemas, juegos, software)</td>
+          <td>Desarrollo de sistemas, software de alto rendimiento</td>
+        </tr>
+
+        <tr>
+          <td>Ada</td>
+          <td>Procedural</td>
+          <td>Seguridad, robustez, ideal para sistemas críticos</td>
+          <td>1983</td>
+          <td>Moderada (aeroespacial, defensa)</td>
+          <td>Sistemas embebidos, defensa, aeroespacial</td>
+        </tr>
+
+        <tr>
+          <td>Common Lisp</td>
+          <td>Funcional</td>
+          <td>Expresividad, metaprogramación, manejo de listas</td>
+          <td>1984</td>
+          <td>Baja (investigación, IA)</td>
+          <td>Inteligencia artificial, investigación</td>
+        </tr>
+
+        <tr>
+          <td>MATLAB</td>
+          <td>Otras</td>
+          <td>Facilidad para cálculos numéricos, herramientas gráficas</td>
+          <td>1984</td>
+          <td>Alta (ingeniería, ciencia)</td>
+          <td>Computación científica, ingeniería</td>
+        </tr>
+
+        <tr>
+          <td>Eiffel</td>
+          <td>Orientado a objetos</td>
+          <td>Diseño por contrato, claridad, seguridad</td>
+          <td>1985</td>
+          <td>Baja (academia, nicho)</td>
+          <td>Desarrollo de software seguro</td>
+        </tr>
+
+        <tr>
+          <td>Objective-C</td>
+          <td>Orientado a objetos</td>
+          <td>Integración con Cocoa, desarrollo para Apple</td>
+          <td>1986</td>
+          <td>Moderada (legado en iOS/macOS)</td>
+          <td>Desarrollo de aplicaciones para Apple</td>
+        </tr>
+
+        <tr>
+          <td>Erlang</td>
+          <td>Funcional</td>
+          <td>Concurrencia, tolerancia a fallos, escalabilidad</td>
+          <td>1986</td>
+          <td>Moderada (telecomunicaciones, backend)</td>
+          <td>Telecomunicaciones, sistemas distribuidos</td>
+        </tr>
+
+        <tr>
+          <td>Perl</td>
+          <td>Procedural</td>
+          <td>Facilidad para procesamiento de texto, flexibilidad</td>
+          <td>1987</td>
+          <td>Moderada (legado, scripting)</td>
+          <td>Administración de sistemas, scripting</td>
+        </tr>
+
+        <tr>
+          <td>Tcl</td>
+          <td>Procedural</td>
+          <td>Simplicidad, integración con herramientas gráficas (Tk)</td>
+          <td>1988</td>
+          <td>Baja (legado, scripting)</td>
+          <td>Scripting, interfaces gráficas</td>
+        </tr>
+
+        <tr>
+          <td>Mathematica</td>
+          <td>Otras</td>
+          <td>Cálculos simbólicos, matemáticas avanzadas</td>
+          <td>1988</td>
+          <td>Moderada (investigación, educación)</td>
+          <td>Matemáticas, investigación científica</td>
+        </tr>
+
+        <tr>
+          <td>FL (Backus)</td>
+          <td>Funcional</td>
+          <td>Puramente funcional, enfoque en programación matemática</td>
+          <td>1989</td>
+          <td>Muy baja (academia)</td>
+          <td>Investigación en lenguajes funcionales</td>
+        </tr>
+
+      </table>
+
+    </div>
+
+    <!--Formulario con método post-->
+    <div class="form-box" id="sugerencia">
+
+      <h2>Formulario de sugerencias</h2>
+
+      <form action="" method="post">
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name">
+
+        <br><br>
+
+        <label for="correo">Email</label>
+        <input type="email" name="email" id="email">
+
+        <br><br>
+
+        <label for="mensaje">Sugerencia</label>
+        <textarea name="message" id="message"></textarea>
+
+        <br><br>
+
+        <button type="submit">Enviar</button>
+
+      </form>
+
+      <br><br>
+
+    </div>
+
+  </main>
+
+  <footer>
+    Arroz con pollo, todos los derechos reservados
+  </footer>
+
 </body>
+
 </html>
