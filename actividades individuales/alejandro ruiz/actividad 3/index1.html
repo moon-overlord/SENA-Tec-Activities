@@ -1,124 +1,154 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajedrez</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajedrez</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Rosarivo:ital@0;1&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div class="header-container">
-            <div class="header-title">
-                <h1>Ajedrez</h1>
-            </div>
-            <!-- Menú de hamburguesa -->
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
-            <label for="menu-toggle" class="hamburger">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </label>
-            <!-- Enlaces de navegación -->
-            <nav class="header-item">
-                <a href="#">Inicio</a>
-                <a href="#history">Historia del ajedrez</a>
-                <a href="#best-players">Mejores jugadores</a>
-                <a href="#contacts">Contáctanos</a>
-            </nav>
+  <header>
+    <div class="header-container">
+      <div class="header-title">
+        <h1>Ajedrez</h1>
+      </div>
+      <!-- Menú de hamburguesa -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </label>
+      <!-- Enlaces de navegación -->
+      <nav class="header-item">
+        <a href="#">Inicio</a>
+        <a href="#history">Historia del ajedrez</a>
+        <a href="#best-players">Mejores jugadores</a>
+        <a href="#contacts">Contáctanos</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="history-aside-container">
+      <article id="history">
+        <h2>La historia del ajedrez</h2>
+        <section>
+          <p>
+            El <strong>ajedrez</strong> tiene su origen en la India, más concretamente en el <span
+              style="color: blue;">Valle del Indo</span>, y data del siglo VI d.C. Originalmente conocido como
+            Chaturanga, o juego del ejército, se difundió rápidamente por las rutas comerciales, llegó a Persia, y desde
+            allí al Imperio bizantino, extendiéndose posteriormente por toda Asia. La mayoría de los historiadores
+            coinciden en ubicar el origen del ajedrez en la India en el siglo VII. El mundo árabe adoptó el ajedrez con
+            un entusiasmo sin igual: estudiaron y analizaron en profundidad los mecanismos del juego, escribieron
+            numerosos tratados sobre ajedrez y desarrollaron el sistema de notación algebraica.
+          </p>
+          <p>
+            El juego llegó a Europa entre los años 700 y 900, a través de la conquista de España por el Islam, aunque
+            también lo practicaban los vikingos y los Cruzados que regresaban de Tierra Santa. En las excavaciones de
+            una sepultura vikinga hallada en la costa sur de Bretaña se encontró un juego de ajedrez, y en la región
+            francesa de los Vosgos se descubrieron unas piezas del siglo X, de origen escandinavo, que respondían al
+            modelo árabe tradicional. Durante la edad media España e Italia eran los países donde más se practicaba. Se
+            jugaba de acuerdo con las normas árabes (descritas en diversos tratados de los que fue traductor y adaptador
+            Alfonso X el Sabio), según las cuales la reina y el alfil son piezas relativamente débiles, que sólo pueden
+            avanzar de casilla en casilla.
+          </p>
+          <p>
+            La era moderna del Ajedrez, sin embargo, puede ser ubicada en el siglo XV, donde las piezas obtuvieron la
+            forma que tienen actualmente. El primer analista serio del juego fue el español Ruy López de Segura (Siglo
+            XVI), quien en 1561 describió las reglas que aún se usan. El primer reglamento impreso fue publicado por
+            Francois Philidor con el título Analyse du jeu des échecs (1749), que fue traducido a muchos idiomas y ayudó
+            a la difusión del juego.
+          </p>
+          <p>
+            Durante los siglos XVI y XVII el ajedrez experimentó un importante cambio, y la reina se convirtió en la
+            pieza más poderosa, en cuanto a su movimiento se refiere, del tablero. Fue entonces cuando se permitió a los
+            peones avanzar dos casillas en su primer movimiento y se introdujeron la regla conocida como en passant ('al
+            paso'), que permite capturar el peón que sigue su marcha y no come la ficha que se le ha ofrecido por una
+            determinada estrategia, y el revolucionario concepto del enroque. Los jugadores italianos comenzaron a
+            dominar el juego, arrebatándoles la supremacía a los españoles. Los italianos, a su vez, fueron desbancados
+            por los franceses y los ingleses durante los siglos XVIII y XIX cuando el ajedrez, que había sido hasta
+            entonces el juego predilecto de la nobleza y la aristocracia, pasó a los cafés y las universidades. El nivel
+            del juego mejoró entonces de manera notable. Comenzaron a organizarse partidas y torneos con mayor
+            frecuencia, y los jugadores más destacados crearon sus propias escuelas.
+          </p>
+        </section>
+      </article>
+
+      <aside>
+        <img src="img/wallpaper.jpg" alt="imagen de ajedrez">
+      </aside>
+    </div>
+
+    <article id="best-players">
+      <h2>Mejores jugadores</h2>
+      <section>
+        <div class="players-grid">
+          <div class="player">
+            <a href="https://es.wikipedia.org/wiki/Magnus_Carlsen">
+              <img src="img/magnus-carlsen.png" alt="Magnus Carlsen">
+              <p>Magnus Carlsen</p>
+            </a>
+          </div>
+          <div class="player">
+            <a href="https://es.wikipedia.org/wiki/Hikaru_Nakamura">
+              <img src="img/hikaru-nakamura.png" alt="Hikaru Nakamura">
+              <p>Hikaru Nakamura</p>
+            </a>
+          </div>
+          <div class="player">
+            <a href="https://es.wikipedia.org/wiki/Gukesh_D">
+              <img src="img/gukesh-d.png" alt="Gukesh D">
+              <p>Gukesh D</p>
+            </a>
+          </div>
+          <div class="player">
+            <a href="https://es.wikipedia.org/wiki/Fabiano_Caruana">
+              <img src="img/fabiano-caruana.png" alt="Fabiano Caruana">
+              <p>Fabiano Caruana</p>
+            </a>
+          </div>
+          <div class="player">
+            <a href="https://es.wikipedia.org/wiki/Arjun_Erigaisi">
+              <img src="img/arjun-erigaisi.png" alt="Arjun Erigaisi">
+              <p>Arjun Erigaisi</p>
+            </a>
+          </div>
+          <div class="player">
+            <a href="https://es.wikipedia.org/wiki/Nodirbek_Abdusatt%C3%B3rov">
+              <img src="img/nordirbeck-abdusatorov.png" alt="Nordirbeck Abdusatorov">
+              <p>Nodirbek Abdusattorov</p>
+            </a>
+          </div>
         </div>
-    </header>
+      </section>
+    </article>
+  </main>
 
-    <main>
-        <div class="history-aside-container">
-            <article id="history">
-                <h2>La historia del ajedrez</h2>
-                <section>
-                    <p>
-                        El <strong>ajedrez</strong> tiene su origen en la India, más concretamente en el <span style="color: blue;">Valle del Indo</span>, y data del siglo VI d.C. Originalmente conocido como Chaturanga, o juego del ejército, se difundió rápidamente por las rutas comerciales, llegó a Persia, y desde allí al Imperio bizantino, extendiéndose posteriormente por toda Asia. La mayoría de los historiadores coinciden en ubicar el origen del ajedrez en la India en el siglo VII. El mundo árabe adoptó el ajedrez con un entusiasmo sin igual: estudiaron y analizaron en profundidad los mecanismos del juego, escribieron numerosos tratados sobre ajedrez y desarrollaron el sistema de notación algebraica.
-                    </p>
-                    <p>
-                        El juego llegó a Europa entre los años 700 y 900, a través de la conquista de España por el Islam, aunque también lo practicaban los vikingos y los Cruzados que regresaban de Tierra Santa. En las excavaciones de una sepultura vikinga hallada en la costa sur de Bretaña se encontró un juego de ajedrez, y en la región francesa de los Vosgos se descubrieron unas piezas del siglo X, de origen escandinavo, que respondían al modelo árabe tradicional. Durante la edad media España e Italia eran los países donde más se practicaba. Se jugaba de acuerdo con las normas árabes (descritas en diversos tratados de los que fue traductor y adaptador Alfonso X el Sabio), según las cuales la reina y el alfil son piezas relativamente débiles, que sólo pueden avanzar de casilla en casilla.
-                    </p>
-                    <p>
-                        La era moderna del Ajedrez, sin embargo, puede ser ubicada en el siglo XV, donde las piezas obtuvieron la forma que tienen actualmente. El primer analista serio del juego fue el español Ruy López de Segura (Siglo XVI), quien en 1561 describió las reglas que aún se usan. El primer reglamento impreso fue publicado por Francois Philidor con el título Analyse du jeu des échecs (1749), que fue traducido a muchos idiomas y ayudó a la difusión del juego.
-                    </p>
-                    <p>
-                        Durante los siglos XVI y XVII el ajedrez experimentó un importante cambio, y la reina se convirtió en la pieza más poderosa, en cuanto a su movimiento se refiere, del tablero. Fue entonces cuando se permitió a los peones avanzar dos casillas en su primer movimiento y se introdujeron la regla conocida como en passant ('al paso'), que permite capturar el peón que sigue su marcha y no come la ficha que se le ha ofrecido por una determinada estrategia, y el revolucionario concepto del enroque. Los jugadores italianos comenzaron a dominar el juego, arrebatándoles la supremacía a los españoles. Los italianos, a su vez, fueron desbancados por los franceses y los ingleses durante los siglos XVIII y XIX cuando el ajedrez, que había sido hasta entonces el juego predilecto de la nobleza y la aristocracia, pasó a los cafés y las universidades. El nivel del juego mejoró entonces de manera notable. Comenzaron a organizarse partidas y torneos con mayor frecuencia, y los jugadores más destacados crearon sus propias escuelas.
-                    </p>
-                </section>
-            </article>
-
-            <aside>
-                <img src="img/wallpaper.jpg" alt="imagen de ajedrez">
-            </aside>
-        </div>
-
-        <article id="best-players">
-            <h2>Mejores jugadores</h2>
-            <section>
-                <div class="players-grid">
-                    <div class="player">
-                        <a href="https://es.wikipedia.org/wiki/Magnus_Carlsen">
-                            <img src="img/magnus-carlsen.png" alt="Magnus Carlsen">
-                            <p>Magnus Carlsen</p>
-                        </a>
-                    </div>
-                    <div class="player">
-                        <a href="https://es.wikipedia.org/wiki/Hikaru_Nakamura">
-                            <img src="img/hikaru-nakamura.png" alt="Hikaru Nakamura">
-                            <p>Hikaru Nakamura</p>
-                        </a>
-                    </div>
-                    <div class="player">
-                        <a href="https://es.wikipedia.org/wiki/Gukesh_D">
-                            <img src="img/gukesh-d.png" alt="Gukesh D">
-                            <p>Gukesh D</p>
-                        </a>
-                    </div>
-                    <div class="player">
-                        <a href="https://es.wikipedia.org/wiki/Fabiano_Caruana">
-                            <img src="img/fabiano-caruana.png" alt="Fabiano Caruana">
-                            <p>Fabiano Caruana</p>
-                        </a>
-                    </div>
-                    <div class="player">
-                        <a href="https://es.wikipedia.org/wiki/Arjun_Erigaisi">
-                            <img src="img/arjun-erigaisi.png" alt="Arjun Erigaisi">
-                            <p>Arjun Erigaisi</p>
-                        </a>
-                    </div>
-                    <div class="player">
-                        <a href="https://es.wikipedia.org/wiki/Nodirbek_Abdusatt%C3%B3rov">
-                            <img src="img/nordirbeck-abdusatorov.png" alt="Nordirbeck Abdusatorov">
-                            <p>Nodirbek Abdusattorov</p>
-                        </a>
-                    </div>
-                </div>
-            </section>
-        </article>
-    </main>
-
-    <footer id="contacts">
-        <div class="footer-parent">
-            <p>Contáctanos</p>
-            <div class="footer-item">
-                <a href="https://wa.me/573202097078">
-                    <img src="img/WhatsApp-logo.png" alt="logo de whatsapp" width="30px">
-                    +57 3202097078
-                </a>
-            </div>
-            <div class="footer-item">
-                <a href="mailto:alecruizwillanson@gmail.com">
-                    <img src="img/gmail-logo.png" alt="logo de gmail" width="30px">
-                    Gmail
-                </a>
-            </div>
-        </div>
-        <p>Alejandro Ruiz, sin derechos reservados waaa</p>
-    </footer>
+  <footer id="contacts">
+    <div class="footer-parent">
+      <p>Contáctanos</p>
+      <div class="footer-item">
+        <a href="https://wa.me/573202097078">
+          <img src="img/WhatsApp-logo.png" alt="logo de whatsapp" width="30px">
+          +57 3202097078
+        </a>
+      </div>
+      <div class="footer-item">
+        <a href="mailto:alecruizwillanson@gmail.com">
+          <img src="img/gmail-logo.png" alt="logo de gmail" width="30px">
+          Gmail
+        </a>
+      </div>
+    </div>
+    <p>Alejandro Ruiz, sin derechos reservados waaa</p>
+  </footer>
 </body>
+
 </html>
