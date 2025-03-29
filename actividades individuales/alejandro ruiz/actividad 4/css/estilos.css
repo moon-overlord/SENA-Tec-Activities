@@ -1,0 +1,145 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+.titulo {
+  background-color: #008b8b;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.titulo h1 {
+  margin: 0;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.contenedor-imagen {
+  margin: 1.5rem auto;
+  max-width: 800px;
+  padding: 0 1rem;
+}
+
+.contenedor-imagen img {
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calendario {
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background: white;
+}
+
+.contenedor-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.contenedor-titulo h2 {
+  margin: 0 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.contenedor-item-0 img {
+  width: 100px;
+  height: auto;
+}
+
+.contener-padre {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.contenedor-item {
+  flex: 1;
+  min-width: 0;
+  padding: 0.8rem 0.5rem;
+  text-align: center;
+  border-radius: 8px;
+  background: #f8f9fa;
+  transition: all 0.2s ease;
+  margin: 0 0.25rem;
+}
+
+.contenedor-item:hover {
+  background: #e9ecef;
+  transform: translateY(-2px);
+}
+
+.contenedor-item p:first-child {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #555;
+  margin: 0 0 0.3rem 0;
+  text-transform: uppercase;
+}
+
+.contenedor-item hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 0.3rem auto;
+  width: 80%;
+}
+
+.contenedor-item p:last-child {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  margin: 0.3rem 0 0 0;
+}
+
+.contener-padre:first-child .contenedor-item:first-child,
+.contener-padre:first-child .contenedor-item:nth-child(2),
+.contener-padre:last-child .contenedor-item:nth-last-child(2),
+.contener-padre:last-child .contenedor-item:last-child {
+  background: #f0f0f0;
+}
+
+.contener-padre:first-child .contenedor-item:first-child p,
+.contener-padre:first-child .contenedor-item:nth-child(2) p,
+.contener-padre:last-child .contenedor-item:nth-last-child(2) p,
+.contener-padre:last-child .contenedor-item:last-child p {
+  color: #999;
+}
+
+@media (max-width: 768px) {
+  .contenedor-item p:first-child {
+    font-size: 0.7rem;
+  }
+
+  .contenedor-item p:last-child {
+    font-size: 1rem;
+  }
+
+  .contenedor-titulo h2 {
+    font-size: 1.5rem;
+  }
+
+  .contenedor-item-0 img {
+    width: 80px;
+  }
+}
