@@ -1,0 +1,141 @@
+:root {
+  --gray-color: rgb(232, 232, 232);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+.navbar {
+  background-color: var(--gray-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar-logo img {
+  display: block;
+  border-radius: 15px;
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar-menu {
+  background-color: var(--gray-color);
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navbar-menu li {
+  background-color: var(--gray-color);
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 5px 10px;
+  font-size: clamp(14px, 3vw, 16px);
+}
+
+.navbar-menu a:hover {
+  color: green;
+}
+
+.container1 {
+  text-align: center;
+  background-image: url("../img/wide-img.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 30vh;
+  min-height: 150px;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.container2 {
+  margin: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.tarjeta {
+  width: 100%;
+  max-width: 300px;
+  min-width: 200px;
+  height: 75px;
+  background-color: var(--gray-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+  flex-grow: 1;
+}
+
+.footer1 {
+  background-color: var(--gray-color);
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar-menu {
+    width: 100%;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .container1 {
+    height: 25vh;
+    padding: 10px;
+  }
+
+  .container2 {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .navbar-menu a {
+    padding: 3px 8px;
+  }
+
+  .container1 {
+    height: 20vh;
+  }
+}

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .contenedor {
+    display: flex;
+    gap: 8px; /* Espacio entre los elementos */
+    justify-content: center; /* Centra las cajas horizontalmente */
+    align-items: center; /* Centra las cajas verticalmente */
+    height: 90vh; /* Altura de la ventana */
+  }
+  
+  .caja {
+    background-color: #074d09;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    border-radius: 2px;
+    flex-grow: 1; /* La caja crece para llenar el espacio disponible */
+    flex-shrink: 2; /* La caja se encoge si es necesario */
+    flex-basis: 40px; /* Tamaño inicial de la caja */
+  }
