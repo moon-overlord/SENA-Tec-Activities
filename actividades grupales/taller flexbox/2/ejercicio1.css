@@ -1,0 +1,36 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+
+section {
+    display: flex;
+    justify-content: center;
+
+}
+
+section div {
+    width: 400px;
+    height: 120px;
+    margin: 10px;
+    background-color: #ff0000;
+}
+article{
+    display: flex;
+    justify-content: center;
+}
+article div {
+    width: 611px;
+    height: 120px;
+    margin: 8px;
+    background-color: #ff0000;
+}
+header {
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 0;
+    text-align: center;
+    justify-content: space-around;
+}
